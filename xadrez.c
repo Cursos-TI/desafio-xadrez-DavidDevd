@@ -24,7 +24,27 @@ int main() {
         printf("Esquerda\n");
         k++;
     } while (k < 8);
-    
+    printf("\n");
+
+    // Movimento do Cavalo (2 casas para baixo e 1 para a esquerda) - Utilizando for + while
+    printf("Movimento do Cavalo:\n");
+
+    // Definição das quantidades de casas do movimento do Cavalo
+    int casasParaBaixo = 2;
+    int casasParaEsquerda = 1;
+
+    // Loop externo com for: controla as duas casas para baixo
+    for (int i = 0; i < casasParaBaixo; i++) {
+        printf("Baixo\n");
+    }
+
+    // Loop interno com while: controla a casa para a esquerda
+    int l = 0;
+    while (l < casasParaEsquerda) {
+        printf("Esquerda\n");
+        l++;
+    }
+
     return 0;
 }
 
